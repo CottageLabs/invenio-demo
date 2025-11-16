@@ -10,6 +10,14 @@
 
 FROM registry.cern.ch/inveniosoftware/almalinux:1
 
+# 2025-11-16
+# This is a manual edit to install Python 3.12 as the base image comes with 3.9
+RUN dnf -y install python3.12 python3.12-devel python3.12-libs python3.12-pip && \
+    alternatives --install /usr/bin/python3 python3 /usr/bin/python3.12 1 && \
+    alternatives --set python3 /usr/bin/python3.12 && \
+    python3.12 -m pip install --upgrade pip && \
+    python3.12 -m pip install pipenv
+
 COPY site ./site
 COPY Pipfile Pipfile.lock ./
 RUN pipenv install --deploy --system

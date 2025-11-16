@@ -69,6 +69,7 @@ services:
       - static_data:/opt/invenio/var/instance/static
       - uploaded_data:/opt/invenio/var/instance/data
       - archived_data:/opt/invenio/var/instance/archive
+      - /etc/letsencrypt:/etc/letsencrypt
 
   # API Rest Application
   web-api:
