@@ -1,3 +1,5 @@
+gutenberg_data
+.api_token
 Pipfile.lock
 celerybeat-schedule.db
 

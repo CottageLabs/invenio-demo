@@ -6,6 +6,7 @@
 
   # Email list
   adm_users=(
+      "admin0@example.org"
       "admin1@example.org"
       "admin2@example.org"
       "admin3@example.org"
@@ -36,3 +37,4 @@
 
   echo "========================================"
   echo "All users created successfully!"
+  echo "Create upload credentials with pipenv run invenio tokens create -n uploader -u admin0@example.org"
