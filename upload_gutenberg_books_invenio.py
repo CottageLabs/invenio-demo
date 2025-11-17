@@ -28,7 +28,7 @@ class InvenioUploader:
     def __init__(
         self,
         base_url: str = "https://127.0.0.1:5000",
-        token_file: str = "scripts/gutenberg/.api_token",
+        token_file: str = ".api_token",
         data_dir: str = "gutenberg_data"
     ):
         self.base_url = base_url.rstrip('/')
@@ -817,8 +817,8 @@ def main():
     parser.add_argument(
         '-t', '--token-file',
         type=str,
-        default='scripts/gutenberg/.api_token',
-        help='API token file (default: scripts/gutenberg/.api_token)'
+        default='.api_token',
+        help='API token file (default: .api_token)'
     )
     parser.add_argument(
         '-n', '--limit',
