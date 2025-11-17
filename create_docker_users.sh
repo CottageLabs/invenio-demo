@@ -1,7 +1,7 @@
  #!/usr/bin/env bash
   # -*- coding: utf-8 -*-
 
-  container_name="demo-1-web-api-1"
+  container_name="invenio-demo-web-api-1"
   password="test123"
 
   # Email list
