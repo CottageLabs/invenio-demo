@@ -6,19 +6,19 @@
 
   # Email list
   adm_users=(
-      "admin1@invenio"
-      "admin2@invenio"
-      "admin3@invenio"
-      "admin4@invenio"
-      "admin5@invenio"
+      "admin1@example.org"
+      "admin2@example.org"
+      "admin3@example.org"
+      "admin4@example.org"
+      "admin5@example.org"
   )
 
   users=(
-      "user1@invenio"
-      "user2@invenio"
-      "user3@invenio"
-      "user4@invenio"
-      "user5@invenio"
+      "user1@example.org"
+      "user2@example.org"
+      "user3@example.org"
+      "user4@example.org"
+      "user5@example.org"
   )
 
   echo "Creating users with password: $password"
