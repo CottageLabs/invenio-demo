@@ -31,7 +31,7 @@
 
   for email in "${adm_users[@]}"; do
    echo "Promoting user: $email"
-   pipenv run invenio access allow administration-access user "$email"
+   pipenv run invenio access allow superuser-access user "$email"
   done
 
   echo "========================================"

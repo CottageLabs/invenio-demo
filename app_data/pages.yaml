@@ -1,0 +1,9 @@
+# list of pages:
+- url: /about
+  title: About
+  description: About this project
+  template: about.html
+- url: /repository-policy
+  title: Repository Policy
+  description: A policy for the repository
+  template: repository-policy.html
